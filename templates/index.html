@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voice Calculator</h1>
+
+        <div class="calculator">
+            <input type="text" id="expression" placeholder="Enter your expression here" />
+            <div class="buttons">
+                <button class="btn" onclick="calculate()">Calculate</button>
+                <button class="btn voice-btn" onclick="voiceCalculate()">🎤 Use Voice</button>
+            </div>
+        </div>
+
+        <div id="result"></div>
+
+        <!-- Error Message -->
+        <div id="error" class="error-message"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
